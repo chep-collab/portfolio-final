@@ -1,5 +1,5 @@
 # Mercy's Developer Portfolio 💻
-
+🔗 Live Demo: [portfolio-b1elopyfh-chep-collabs-projects.vercel.app](https://portfolio-b1elopyfh-chep-collabs-projects.vercel.app)
 A sleek and responsive personal portfolio built with **Vue 3**, **Vite**, and **Tailwind CSS**. This site showcases my web development projects, skills, and contact information—all wrapped in a clean, modern UI.
 
 ---
