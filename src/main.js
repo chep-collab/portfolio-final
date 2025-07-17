@@ -1,6 +1,10 @@
 // src/main.js
 import { createApp } from 'vue'
 import App from './App.vue'
-import './style.css'
+import './index.css'
 
-createApp(App).mount('#app')
+import intersect from './directives/intersect'
+
+const app = createApp(App)        // 🔄 Create the app first
+app.directive('intersect', intersect) // ✅ Now register directives
+app.mount('#app')                 // 🚀 Mount it last
