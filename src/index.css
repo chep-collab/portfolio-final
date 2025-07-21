@@ -1,9 +1,9 @@
-/* ✅ Tailwind core import */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* 🌈 Custom theme variables */
+/* your custom styles here */
+
 @layer base {
   :root {
     --orange-400: #fb923c;
