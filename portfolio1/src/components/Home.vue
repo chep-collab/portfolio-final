@@ -12,7 +12,7 @@
 
       <!-- 🔧 Subtitle -->
       <p class="mt-4 text-base sm:text-lg lg:text-xl text-gray-300 animate-fade-in-up delay-200">
-        A fullstack developer specializing in Vue/Nuxt, Razor Pages, and scalable deployments 
+        A fullstack developer specializing in Vue/Nuxt, Razor Pages, and scalable deployments —
         bringing frontend flair, backend logic, and polished experiences to life.
       </p>
 

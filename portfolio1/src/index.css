@@ -1,4 +1,4 @@
-/* ✅ Tailwind core import */
+/* ✅ Tailwind core layers — must be first */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,14 +39,10 @@
 @keyframes slideInUp     { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes slideInDown   { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes scaleIn       { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
-@keyframes blink         { 50% { opacity: 0; } }
 
-.animate-blink {
-  animation: blink 1s step-end infinite;
-}
-
-/* 🎨 Background utility class — now image-free */
+/* 📸 Background utility class */
 .bg-portfolio {
+  background-image: url('./assets/portfolio-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,4 +61,11 @@
   .animate-scale-in {
     animation: none !important;
   }
+}
+@keyframes blink {
+  50% { opacity: 0 }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
 }
