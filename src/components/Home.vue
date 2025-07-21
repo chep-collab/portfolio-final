@@ -2,7 +2,7 @@
   <section
     id="home"
     class="relative min-h-screen flex items-center justify-center bg-cover bg-center px-4 sm:px-6 lg:px-8"
-    :style="{ backgroundImage: `url(/images/hero-bg.jpg)` }"
+    :style="{ backgroundImage: `url(/hero-bg.jpeg)` }"
   >
     <div class="text-center text-white z-10 w-full max-w-3xl mx-auto">
       <!-- 🎯 Typing Effect -->
