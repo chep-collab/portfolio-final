@@ -1,24 +1,21 @@
 <template>
   <section
     id="home"
-    class="relative min-h-screen flex items-center justify-center bg-cover bg-center px-4 sm:px-6 lg:px-8"
-    :style="{ backgroundImage: `url(/hero-bg.jpeg)` }"
+    class="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 py-12 bg-gradient-to-b from-gray-900 to-blue-900"
   >
-    <div class="text-center text-white z-10 w-full max-w-3xl mx-auto">
-      <!-- 🎯 Typing Effect -->
+    <!-- 👋 Text Content -->
+    <div class="text-white z-10 w-full md:w-1/2 text-center md:text-left">
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold animate-fade-in-down leading-tight text-orange-500">
         Hi, I'm <span>{{ typedName }}</span><span class="animate-blink ml-1">|</span>
       </h1>
 
-      <!-- 🔧 Subtitle -->
       <p class="mt-4 text-base sm:text-lg lg:text-xl text-gray-300 animate-fade-in-up delay-200">
         A fullstack developer specializing in Vue/Nuxt, Razor Pages, and scalable deployments 
         bringing frontend flair, backend logic, and polished experiences to life.
       </p>
 
-      <!-- 🔗 CTA Buttons -->
       <div
-        class="mt-8 flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 animate-scale-in delay-400"
+        class="mt-8 flex flex-col sm:flex-row flex-wrap justify-center md:justify-start items-center gap-4 animate-scale-in delay-400"
       >
         <a
           href="/assets/resume.pdf"
@@ -43,8 +40,14 @@
       </div>
     </div>
 
-    <!-- 🌌 Background overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/80 to-blue-900/80"></div>
+    <!-- 📸 Hero Image (Right Side) -->
+    <div class="w-full md:w-1/2 mt-10 md:mt-0 flex justify-center animate-fade-in-up delay-200">
+      <img
+        src="/hero-bg.jpeg"
+        alt="Hero"
+        class="w-full max-w-sm rounded-lg shadow-lg object-cover"
+      />
+    </div>
   </section>
 </template>
 
