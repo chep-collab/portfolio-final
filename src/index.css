@@ -47,9 +47,10 @@
 
 /* 🎨 Background utility class — now image-free */
 .bg-portfolio {
-  background-size: cover;
-  background-position: center;
+   background-image: url('/hero-bg.jpeg');
+    background-position: right center;
   background-repeat: no-repeat;
+   background-size: 300px;
   background-attachment: fixed;
 }
 

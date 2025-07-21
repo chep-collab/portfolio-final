@@ -1,6 +1,5 @@
-<!-- src/App.vue -->
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-gray-900 to-blue-900 font-sans">
+  <div class="min-h-screen font-sans bg-portfolio">
     <!-- Navbar -->
     <nav class="bg-gray-800 shadow-lg fixed w-full z-10 animate-fade-in-down">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,15 +18,16 @@
           <!-- Mobile Menu Button -->
           <div class="md:hidden flex items-center">
             <button @click="isMenuOpen = !isMenuOpen" class="text-gray-300 hover:text-orange-500 focus:outline-none hover:scale-105">
-              <svg v-if="!isMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg v-if="!isMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
               </svg>
-              <svg v-else class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg v-else class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
               </svg>
             </button>
           </div>
         </div>
+
         <!-- Mobile Navigation -->
         <div v-if="isMenuOpen" class="md:hidden bg-gray-800 px-4 pb-4 space-y-2 animate-slide-in-down">
           <a href="#home" class="block text-gray-300 hover:text-orange-500 transition text-base hover:scale-105">Home</a>
@@ -93,4 +93,14 @@ const selectedProject = ref(null)
 html {
   scroll-behavior: smooth;
 }
+
+/* 🌄 Apply background image from public folder */
+.bg-portfolio {
+  background-image: url('/hero-bg.jpeg');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-attachment: fixed;
+}
 </style>
+
