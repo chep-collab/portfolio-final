@@ -1,8 +1,0 @@
-# Ignore local dev dependencies and clutter
-node_modules
-.vscode
-.env
-dist
-coverage
-.DS_Store
-*.log
