@@ -1,4 +1,3 @@
-
 # Logs
 logs
 *.log
@@ -8,21 +7,41 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+.vite/
+
+# Environment variables
+.env
+.env.*
+
+# Local config files
 *.local
 
-# Editor directories and files
+# Vercel
+.vercel/
+
+# Editor folders and settings
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+
+# Optional Windows/Mac trash files
+Thumbs.db
+ehthumbs.db
+
+# VS-specific files
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-.vercel
+# Old deleted project reference
 portfolio1/
+
