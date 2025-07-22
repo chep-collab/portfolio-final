@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* your custom styles here */
-
 @layer base {
+
+
   :root {
     --orange-400: #fb923c;
     --orange-500: #f97316;
